@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 224 71.4% 4.1%;
+--card: 0 0% 100%;
+--card-foreground: 224 71.4% 4.1%;
+--popover: 0 0% 100%;
+--popover-foreground: 224 71.4% 4.1%;
+--primary: 262.1 83.3% 57.8%;
+--primary-foreground: 210 20% 98%;
+--secondary: 220 14.3% 95.9%;
+--secondary-foreground: 220.9 39.3% 11%;
+--muted: 220 14.3% 95.9%;
+--muted-foreground: 220 8.9% 46.1%;
+--accent: 220 14.3% 95.9%;
+--accent-foreground: 220.9 39.3% 11%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 210 20% 98%;
+--border: 220 13% 91%;
+--input: 220 13% 91%;
+--ring: 262.1 83.3% 57.8%;
+				}
+				.dark {
+					--background: 224 71.4% 4.1%;
+--foreground: 210 20% 98%;
+--card: 224 71.4% 4.1%;
+--card-foreground: 210 20% 98%;
+--popover: 224 71.4% 4.1%;
+--popover-foreground: 210 20% 98%;
+--primary: 263.4 70% 50.4%;
+--primary-foreground: 210 20% 98%;
+--secondary: 215 27.9% 16.9%;
+--secondary-foreground: 210 20% 98%;
+--muted: 215 27.9% 16.9%;
+--muted-foreground: 217.9 10.6% 64.9%;
+--accent: 215 27.9% 16.9%;
+--accent-foreground: 210 20% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 210 20% 98%;
+--border: 215 27.9% 16.9%;
+--input: 215 27.9% 16.9%;
+--ring: 263.4 70% 50.4%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    
+
+<div class="max-w-lg mx-auto bg-card p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+  <h1 class="text-4xl font-bold text-primary text-center underline decoration-accent">CV Writing (Sample CV)</h1>
+  <div class="mt-4 text-center">
+    <p class="text-accent font-semibold text-2xl">Ganesh GOPAL DAS ADHIKARI</p>
+    <p class="text-muted-foreground">10, MAKARAM PUR, POTASH PUR - 721439</p>
+    <p class="text-muted-foreground">Mob: <span class="text-primary font-bold">+91 9883981149</span></p>
+    <p class="text-muted-foreground">Email: <a href="mailto:ganeshdasadhikari08@gmail.com" class="text-primary hover:underline">ganeshdasadhikari08@gmail.com</a></p>
+  </div>
+  <h2 class="mt-6 text-3xl font-semibold text-primary border-b-2 border-accent pb-2">CAREER OBJECTIVE</h2>
+  <p class="text-muted-foreground italic">To use my skills as an Automobile technician for organizational and individual growth.</p>
+  <h2 class="mt-6 text-3xl font-semibold text-primary border-b-2 border-accent pb-2">EDUCATIONAL QUALIFICATION</h2>
+  <table class="min-w-full mt-2 border border-border">
+    <thead class="bg-muted text-muted-foreground">
+      <tr>
+        <th class="border border-border p-2">Name of Exam</th>
+        <th class="border border-border p-2">Board/University</th>
+        <th class="border border-border p-2">% of marks</th>
+        <th class="border border-border p-2">Year of passing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover:bg-muted/50">
+        <td class="border border-border p-2">Graduation (B.Com)</td>
+        <td class="border border-border p-2">Calcutta University</td>
+        <td class="border border-border p-2">67%</td>
+        <td class="border border-border p-2">2025</td>
+      </tr>
+      <tr class="hover:bg-muted/50">
+        <td class="border border-border p-2">Higher Secondary (Commerce)</td>
+        <td class="border border-border p-2">WBCHSE</td>
+        <td class="border border-border p-2">69%</td>
+        <td class="border border-border p-2">2022</td>
+      </tr>
+      <tr class="hover:bg-muted/50">
+        <td class="border border-border p-2">Secondary</td>
+        <td class="border border-border p-2">WBBSE</td>
+        <td class="border border-border p-2">70%</td>
+        <td class="border border-border p-2">2020</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 class="mt-6 text-3xl font-semibold text-primary border-b-2 border-accent pb-2">TECHNICAL QUALIFICATION</h2>
+  <p class="text-muted-foreground">Pursuing/Completed Automobile Engineering (2 years) at/from The George Telegraph Training Institute.</p>
+  <h2 class="mt-6 text-3xl font-semibold text-primary border-b-2 border-accent pb-2">COMPUTER SKILLS</h2>
+  <ul class="list-disc list-inside text-muted-foreground">
+    <li>Operating System: Windows (XP, 2000, 98)</li>
+    <li>Software Knowledge: MS-Office (Word, Excel and PowerPoint)</li>
+    <li>Internet Operations: Sending and receiving mails, Uploading and downloading files.</li>
+  </ul>
+  <h2 class="mt-6 text-3xl font-semibold text-primary border-b-2 border-accent pb-2">PROJECT HANDLED</h2>
+  <p class="text-muted-foreground">The project was on E-bikes using rechargeable batteries that can travel up to 25 to 32 km/hr.</p>
+  <h2 class="mt-6 text-3xl font-semibold text-primary border-b-2 border-accent pb-2">STRENGTHS</h2>
+  <p class="text-muted-foreground">Good Communication Skills. Ready to take responsibility.</p>
+  <h2 class="mt-6 text-3xl font-semibold text-primary border-b-2 border-accent pb-2">PERSONAL PROFILE</h2>
+  <p class="text-muted-foreground">Father’s Name: GANGA NARAYAN DAS ADHIKARI</p>
+  <p class="text-muted-foreground">Date of Birth: 02th FEB, 2003</p>
+  <p class="text-muted-foreground">Marital Status: Unmarried</p>
+  <p class="text-muted-foreground">Religion: Hinduism</p>
+  <p class="text-muted-foreground">Nationality: Indian</p>
+  <p class="text-muted-foreground">Languages Known: English, Hindi, and Bengali</p>
+  <p class="text-muted-foreground">Hobbies: Playing outdoor games</p>
+  <p class="mt-4 text-muted-foreground italic">I hereby declare that the above information is true to the best of my knowledge and belief.</p>
+</div>
+
+  </body>
+</html>
